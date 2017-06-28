@@ -1,7 +1,5 @@
 package com.grandcircus;
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
-
 import java.util.Scanner;
 
 public class Main {
@@ -24,12 +22,20 @@ public class Main {
             if ((userNum % 2) != 0) {
                 System.out.println(userName + ", " + userNum + " is Odd.");
             }
+
+            if ((userNum % 2) == 0) {
+                System.out.println(userName + ", " + userNum + " is Even.");
+            }
+
             if ((userNum >= 2) && (userNum <= 25) && ((userNum % 2) == 0)) {
                 System.out.println(userName + ", " + userNum + " is Even and less than 25");
             }
-            if ((userNum >= 26) && (userNum <= 60)) {
-                System.out.println(userName + ", " + userNum + " is Even.");
-            }
+
+            if ((userNum % 2) == 0)
+                if ((userNum >= 26) && (userNum <= 60)) {
+                    System.out.println(userName + ", " + userNum + " is Even.");
+                }
+
             if (((userNum % 2) != 0) && (userNum > 60)) {
                 System.out.println(userName + ", " + userNum + " is Odd and over 60.");
             }
