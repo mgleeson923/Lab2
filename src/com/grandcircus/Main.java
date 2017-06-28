@@ -14,8 +14,8 @@ public class Main {
 
         System.out.print("Please enter your name: ");
         userName = scnr.next();
-        do {
 
+        do {
             System.out.print("Enter an integer ranging from 1 to 100: ");
             userNum = scnr.nextInt();
 
@@ -40,7 +40,7 @@ public class Main {
                 System.out.println(userName + ", " + userNum + " is Odd and over 60.");
             }
 
-            System.out.println("Would you like to play again? Y/N?");
+            System.out.print("Would you like to play again? Y/N?: ");
             repeat = scnr.next();
 
         } while (!repeat.equals("N") && !repeat.equals("n"));
